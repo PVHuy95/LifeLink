@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "type": "ICU",
+    "price": "1000",
+    "location": "1",
+    "distance": "9",
+    "size": "Large"
+  },
+  {
+    "id": "2",
+    "type": "ICU",
+    "price": "900",
+    "location": "2",
+    "distance": "4",
+    "size": "Large"
+  },
+  {
+    "id": "3",
+    "type": "ICCU",
+    "price": "800",
+    "location": "1",
+    "distance": "2",
+    "size": "Large"
+  },
+  {
+    "id": "4",
+    "type": "ICCU",
+    "price": "900",
+    "location": "4",
+    "distance": "9",
+    "size": "Large"
+  },
+  {
+    "id": "6",
+    "type": "A/C",
+    "price": "600",
+    "location": "3",
+    "distance": "8",
+    "size": "Medium"
+  },
+  {
+    "id": "7",
+    "type": "Normal",
+    "price": "500",
+    "location": "3",
+    "distance": "4",
+    "size": "Medium"
+  },
+  {
+    "id": "8",
+    "type": "Normal",
+    "price": "600",
+    "location": "4",
+    "distance": "7",
+    "size": "Medium"
+  },
+  {
+    "id": "9",
+    "type": "Non A/C",
+    "price": "500",
+    "location": "3",
+    "distance": "5",
+    "size": "Medium"
+  },
+  {
+    "id": "10",
+    "type": "Non A/C",
+    "price": "400",
+    "location": "5",
+    "distance": "6",
+    "size": "Medium"
+  },
+  {
+    "id": "5",
+    "type": "A/C",
+    "price": "700",
+    "location": "5",
+    "distance": "3",
+    "size": "Medium"
+  }
+]

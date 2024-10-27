@@ -1,0 +1,85 @@
+.box-hover {
+    border: 1px solid #CCC;
+    height: 250px;
+    margin:  auto;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+    width: 400px;
+    
+}
+.box-hover a{
+    text-decoration: none;
+}
+.box-hover img {
+    max-width: 100%;
+    transition: all 0.3s;
+    opacity: 1;
+    
+}
+.nut1{
+    margin-top: 10%;
+    font-size: 30pt;
+    color: rgb(202, 128, 26);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box-hover .nut1,
+.box-hover .nut2 {
+    position: absolute;
+    right: -200%;
+    width: 100%;
+    text-align: center;
+}
+
+.box-hover .nut1 {
+    top: 0%;
+    transition: all 0.5s;
+}
+
+.box-hover .nut2 {
+    /* top: 45%; */
+    transition: all 1s;
+}
+
+.box-hover:hover {
+    background-color: #FFF;
+}
+
+.box-hover:hover img {
+    opacity: 0.1;
+}
+
+.box-hover:hover .nut1,
+.box-hover:hover .nut2 {
+    right: 0;
+}
+.imgvan {
+    width: 90%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    /* max-width: 300px;  */
+    border-radius: 10%;
+}
+.imgvan:hover{
+
+        cursor: pointer;
+        box-shadow: 0px 12px 30px 0px rgb(29, 27, 27);
+        transform: scale(1.1, 1.1);
+        transition: all 800ms;
+        
+}
+
+/* Optional table styling for responsive layout */
+#picture {
+    width: 90%;
+    margin: auto;
+    background-color: azure;
+}
+
+#picture td {
+    width: 33%; /* Ensure each cell takes up 1/3 of the row */
+    padding: 10px; /* Adds space around the images */
+}
+.anhphat{
+    height: 600px;
+    background-size: cover;
+}

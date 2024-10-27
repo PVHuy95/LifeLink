@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "type": "ICU",
+    "price": "1000",
+    "location": "1",
+    "distance": "9",
+    "alt": "ICU Service",
+    "size": "large",
+    "hospital":"ChoRay Hospital"
+  },
+  {
+    "id": "2",
+    "type": "ICU",
+    "price": "900",
+    "location": "2",
+    "distance": "4",
+    "alt": "ICU Service",
+    "size": "large",
+    "hospital":"NhiDong Hospital"
+  },
+  {
+    "id": "3",
+    "type": "ICCU",
+    "price": "800",
+    "location": "1",
+    "distance": "2",
+    "alt": "ICCU Service",
+    "size": "Medium",
+    "hospital":"TuDu Hospital"
+  },
+  {
+    "id": "4",
+    "type": "ICCU",
+    "price": "900",
+    "location": "4",
+    "distance": "9",
+    "alt": "ICCU Service",
+    "size": "Medium",
+    "hospital":"VietPhap Hospital"
+  },
+  {
+    "id": "5",
+    "type": "A/C",
+    "price": "700",
+    "location": "5",
+    "distance": "3",
+    "alt": "A/C Service",
+    "size": "Medium",
+    "hospital":"BachMai Hospital"
+  },
+  {
+    "id": "6",
+    "type": "A/C",
+    "price": "600",
+    "location": "3",
+    "distance": "8",
+    "alt": "A/C Service",
+    "size": "Medium",
+    "hospital":"NhietDoi  Hospital"
+  },
+  {
+    "id": "7",
+    "type": "Normal",
+    "price": "500",
+    "location": "3",
+    "distance": "4",
+    "alt": "Normal Service",
+    "size": "Large",
+    "hospital":"QuanY7A  Hospital"
+  },
+  {
+    "id": "8",
+    "type": "Normal",
+    "price": "600",
+    "location": "4",
+    "distance": "7",
+    "alt": "Normal Service",
+    "size": "Large",
+    "hospital":"SaintPaul Hospital"
+  },
+  {
+    "id": "9",
+    "type": "Non A/C",
+    "price": "500",
+    "location": "3",
+    "distance": "5",
+    "alt": "Non A/C Service",
+    "size": "Large",
+    "hospital":"Vinmec Hospital"
+  },
+  {
+    "id": "10",
+    "type": "Non A/C",
+    "price": "400",
+    "location": "5",
+    "distance": "6",
+    "alt": "Non A/C Service",
+    "size": "Large",
+    "hospital":"UngBuu Hospital"
+  }
+]

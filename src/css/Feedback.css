@@ -1,0 +1,22 @@
+.user{
+    font-size: 30pt;
+}
+.rating{
+    text-shadow: 
+    0.2px 0.2px 0px black,  /* viền đen phía dưới bên phải */
+    -0.2px -0.2px 0px black, /* viền đen phía trên bên trái */
+    0.2px -0.2px 0px black,  /* viền đen phía trên bên phải */
+    -0.2px 0.2px 0px black;  /* viền đen phía dưới bên trái */
+}
+
+.buttonsend:hover{
+    border-radius: 5px;
+    background-color: chartreuse;
+}
+.feedback-container { 
+     padding: 5%;
+  }
+.rate{
+    border: 2 solid black;
+   
+}

@@ -1,0 +1,103 @@
+* {
+  font-size: 15pt;
+
+}
+
+.gallery {
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.gallery img {
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(197, 196, 196, 0.827);
+  transition: all ease-in-out 0.5s;
+}
+
+.gallery img:hover {
+  width: 100%;
+}
+
+.inline {
+  display: flex;
+}
+
+.buttoncall {
+  padding: 5% 0% 0% 5%;
+}
+
+.location {
+  padding: 3% 0% 0% 12%;
+  width: 40%;
+}
+
+.thongbao p {
+  color: #c7343c;
+}
+
+.lgsc {
+  width: 200px;
+}
+
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+
+
+
+.zoom-box {
+  position: absolute;
+  right: 0px;
+  width: 100vh;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  width: 100%;
+  height: 100%;
+  justify-self: stretch;
+  object-fit: cover;
+}
+
+.zoom-image {
+  width: 100%;
+  height: 100%;
+  justify-items: stretch;
+  object-fit: contain;
+}
+
+.btn-call {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+.hos-img {
+  width:100%;
+  max-height:auto;
+}
+
+.buttonbackhome {
+  position: fixed;
+  bottom: 8%;
+  right: 5%;
+  width: 80px;
+  height: 80px;
+  z-index: 1000;
+}
+
+.img:hover {
+  transform: scale(1.5);
+  transition: transform 0.2s ease-in-out;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}

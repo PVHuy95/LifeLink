@@ -1,0 +1,102 @@
+[
+    {
+        "hospital": "ChoRay Hospital",
+        "services": {
+            "A/C": "700 $",
+            "ICCU": "800 $",
+            "ICU": "1000 $",
+            "Non A/C": "500 $",
+            "Normal": "400 $"
+        }
+    },
+    {
+        "hospital": "NhiDong Hospital",
+        "services": {
+            "A/C": "600 $",
+            "ICCU": "700 $",
+            "ICU": "1000 $",
+            "Non A/C": "600 $",
+            "Normal": "300 $"
+        }
+    },
+    {
+        "hospital": "TuDu Hospital",
+        "services": {
+            "A/C": "800 $",
+            "ICCU": "900 $",
+            "ICU": "1000 $",
+            "Non A/C": "500 $",
+            "Normal": "600 $"
+        }
+    },
+    {
+        "hospital": "VietPhap Hospital",
+        "services": {
+            "A/C": "600 $",
+            "ICCU": "800 $",
+            "ICU": "1000 $",
+            "Non A/C": "700 $",
+            "Normal": "500 $"
+        }
+    },
+    {
+        "hospital": "BachMai Hospital",
+        "services": {
+            "A/C": "900 $",
+            "ICCU": "700 $",
+            "ICU": "1000 $",
+            "Non A/C": "600 $",
+            "Normal": "400 $"
+        }
+    },
+    {
+        "hospital": "NhietDoi Hospital",
+        "services": {
+            "A/C": "700 $",
+            "ICCU": "900 $",
+            "ICU": "1000 $",
+            "Non A/C": "500 $",
+            "Normal": "300 $"
+        }
+    },
+    {
+        "hospital": "QuanY7A Hospital",
+        "services": {
+            "A/C": "800 $",
+            "ICCU": "700 $",
+            "ICU": "1000 $",
+            "Non A/C": "400 $",
+            "Normal": "300 $"
+        }
+    },
+    {
+        "hospital": "SaintPaul Hospital",
+        "services": {
+            "A/C": "600 $",
+            "ICCU": "800 $",
+            "ICU": "1000 $",
+            "Non A/C": "600 $",
+            "Normal": "500 $"
+        }
+    },
+    {
+        "hospital": "Vimec Hospital",
+        "services": {
+            "A/C": "900 $",
+            "ICCU": "700 $",
+            "ICU": "1000 $",
+            "Non A/C": "700 $",
+            "Normal": "400 $"
+        }
+    },
+    {
+        "hospital": "UngBuu Hospital",
+        "services": {
+            "A/C": "800 $",
+            "ICCU": "800 $",
+            "ICU": "1000 $",
+            "Non A/C": "500 $",
+            "Normal": "400 $"
+        }
+    }
+]

@@ -1,0 +1,139 @@
+.footer {
+  background-color: rgb(61, 133, 120);
+  color: white;
+  padding-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.footer-logo img {
+  width: 170px;
+}
+.footer-logo2 img {
+  width: 170px;
+}
+
+.footer-about,
+.footer-contact {
+  flex: 1 1 100%; /* Ensure each section takes full width on small screens */
+  max-width: 33%;
+  margin: 10px;
+}
+
+.footer-about h2,
+.footer-contact h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-about p,
+.footer-contact p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  padding: 1%;
+  background-color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-about,
+  .footer-contact {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+
+  .footer-logo img {
+    width: 150px; /* Slightly smaller logo */
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-about h2,
+  .footer-contact h2 {
+    font-size: 20px; /* Smaller headings */
+  }
+
+  .footer-about p,
+  .footer-contact p {
+    font-size: 12px; /* Smaller text */
+  }
+
+  .footer-logo img {
+    width: 120px; /* Further reduced logo size */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-about h2,
+  .footer-contact h2 {
+    font-size: 18px; /* Smaller headings */
+  }
+
+  .footer-about p,
+  .footer-contact p {
+    font-size: 11px; /* Smaller text */
+  }
+
+  .footer-logo img {
+    width: 100px; /* Further reduced logo size */
+  }
+  .footer-logo2 img {
+    width: 100px; /* Further reduced logo size */
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-about,
+  .footer-contact {
+    max-width: 100%; /* Full width for better alignment */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-about h2,
+  .footer-contact h2 {
+    font-size: 16px; /* Smaller headings */
+  }
+
+  .footer-about p,
+  .footer-contact p {
+    font-size: 10px; /* Smaller text */
+  }
+
+  .footer-logo img {
+    width: 400px; /* Smaller logo */
+  
+  }
+  .footer-logo2 img {
+    width: 400px; /* Smaller logo */
+  }
+}
