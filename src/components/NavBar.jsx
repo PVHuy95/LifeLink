@@ -5,12 +5,44 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Dropdown from 'react-bootstrap/Dropdown';
 import icon from '../img/icon.svg'
 import DropdownButton from 'react-bootstrap/DropdownButton';
-
+import React, { useState, useEffect } from 'react';
 
 const MyNav = () => {
+     const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            // Hiện navbar khi cuộn lên hoặc ở đầu trang, ẩn khi cuộn xuống
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                setIsVisible(false);
+            } else {
+                setIsVisible(true);
+            }
+
+            // Kiểm tra xem đã cuộn khỏi đầu trang chưa để đổi màu nền
+            if (currentScrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollY]);
+
+    // Tạo chuỗi class động
+    const navbarClasses = `table-header ${isVisible ? 'navbar-visible' : 'navbar-hidden'} ${isScrolled ? 'navbar-scrolled' : 'navbar-transparent'}`;
+
     return (
         <>
-            <table className='table-header'>
+            <table className={navbarClasses}>
                 <tr>
                     <td className='header-logo' align='center'>
                         <Link to='/'>
@@ -45,7 +77,7 @@ const MyNav = () => {
                                 <Link to='/' className='btn-link' >Home</Link>
                             </Dropdown.Item>
                             <Dropdown.Item >
-                                <Link to='/search' className='btn-link' >eAmbulance Type</Link>
+                                <Link to='/search' className='btn-link' >Ambulance</Link>
                             </Dropdown.Item>
                             <Dropdown.Item >
                                 <Link to='/gallery' className='btn-link' >Gallery</Link>

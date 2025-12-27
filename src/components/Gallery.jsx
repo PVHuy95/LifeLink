@@ -44,6 +44,7 @@ const Gallery = () => {
                         <div className="col-md-4 mt-2 p-2" align='center'><img src={h6} className="imgvan" /></div>
                         <div className="col-md-4 mt-2 p-2" align='center'><img src={h2} className="imgvan" /></div>
                         <div className="col-md-4 mt-2 p-2" align='center'><img src={h8} className="imgvan" /></div>
+                        
                     </div>
                     <br /><br />
                     <div align='center'>

@@ -3,6 +3,7 @@ import '../css/Feedback.css';
 import MyNav from "./NavBar";
 import Footer from '../components/footer';
 import StarRating from './StarRating';
+import toast from 'react-hot-toast';
 
 const Feedback = () => {
     const [formData, setFormData] = useState({
@@ -47,16 +48,22 @@ const Feedback = () => {
     setFeedbackList([{ rating: formData.rating, comment: formData.comment }, ...feedbackList]);
     setFormData({ name: '', email: '', comment: '', rating: 0 });
     
-    alert("Feedback has been sent, thank you.");
+    toast.success("Feedback has been sent, thank you! 🙏", {
+    icon: '✅',
+    style: {
+        background: '#10b981',
+        color: 'white',
+    },
+});
 };
 
     return (
         <>
             <MyNav />
             <div className="bg">
-                <div className='row'>
+                <div className='row' style={{ marginRight: "0" }}>
                     <div>
-                        <h2 align='center' style={{ fontSize: "5vw" }}>Feedback and Rate</h2>
+                        <h2 align='center' className="title_Hung">Feedback and Rate</h2>
                     </div>
                     <div className='col-md-5'>
                         <form onSubmit={handleSubmit} className="feedback-container">

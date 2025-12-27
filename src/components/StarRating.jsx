@@ -6,7 +6,7 @@ const StarRating = ({ totalStars = 5, initialRating = 0, onRate }) => {
   const [hoverRating, setHoverRating] = useState(0);
 
   useEffect(() => {
-    setRating(initialRating); // Đặt lại rating khi initialRating thay đổi
+    setRating(initialRating); 
   }, [initialRating]);
 
   const handleClick = (star) => {

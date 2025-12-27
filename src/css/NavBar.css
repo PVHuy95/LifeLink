@@ -6,10 +6,15 @@ table td{
     width: 16%;
 }
 
-.table-header{
+.table-header {
     width: 100%;
     height: 150px;
-    background-color: #f5e7fd;
+    
+    position: fixed; /* Cố định navbar */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Đảm bảo nằm trên mọi thứ */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Hiệu ứng mượt mà */
 }
 
 .table-header .header-desktop {
@@ -31,13 +36,16 @@ table td{
     /* width: 100%; */
 }
 
-.table-header .header-link:hover{
+.table-header .header-link:hover {
     color: rgb(255, 255, 255);
     font-size: 32px;
-    background-color: #c0a9d0;
-    /* #e5b8ff */
+    
+    background-color: rgb(61, 133, 120); 
+    
     border-radius: 15px;
     font-weight: 600;
+    cursor: pointer; /* Thêm hình bàn tay khi chỉ vào */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt */
 }
 
 .table-header .header-logo img{
@@ -83,4 +91,33 @@ table td{
 .header-mobile .btn-link {
         text-decoration: none;
         color: black;
+}
+
+/* Khi navbar hiện ra */
+.navbar-visible {
+    transform: translateY(0);
+}
+
+/* Khi navbar ẩn đi (cuộn xuống) */
+.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+/* Khi ở đầu trang: Trong suốt */
+.navbar-transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Khi đã cuộn: Có màu nền và mờ ảo (Glassmorphism) */
+.navbar-scrolled {
+    background-color: rgba(61, 133, 120, 0.95);
+    backdrop-filter: blur(10px); /* Làm mờ đằng sau */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Đổi màu chữ thành trắng khi navbar có nền đậm */
+.navbar-scrolled .nav-link, 
+.navbar-scrolled .header-link:hover {
+    color: white !important; /* Dùng !important để đè lên màu cũ */
 }

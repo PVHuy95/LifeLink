@@ -1,3 +1,5 @@
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+
 * {
   font-size: 15pt;
 
@@ -46,10 +48,6 @@
 .lgsc {
   width: 200px;
 }
-
-@import url('https://unpkg.com/leaflet/dist/leaflet.css');
-
-
 
 .zoom-box {
   position: absolute;
@@ -100,4 +98,50 @@
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
+}
+.title_Hung{
+  font-size: 4vw;
+}
+@media (max-width: 576px) {
+  .title_Hung{
+    font-size: 7vw;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* định vị lớp nền */
+  position: relative;
+  min-height: 100vh;
+  
+  /* Đẩy nội dung xuống bằng chiều cao của Navbar */
+  padding-top: 150px;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Giữ nền đứng yên khi cuộn trang */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Thiết lập ảnh nền */
+  background-image: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.2; 
+  
+  filter: blur(2px) brightness(0.8); 
+
+  z-index: -1; 
+  pointer-events: none; 
 }

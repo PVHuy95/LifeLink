@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import bookingdata from '../data/data3.json';
+import toast from 'react-hot-toast';
 
 const BookingButton = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedHospital, setSelectedHospital] = useState('');
   const [selectedService, setSelectedService] = useState('');
   const [pickupLocation, setPickupLocation] = useState('');
+  const [phone, setPhone] = useState('');
   const [price, setPrice] = useState('');
 
   const handleShow = () => setShowModal(true);
@@ -36,7 +38,16 @@ const BookingButton = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!selectedHospital || !selectedService) {
-      alert('Please select both a hospital and a service.');
+      toast.error('Please select both a hospital and a service.', {
+        icon: '⚠️',
+      });
+      return;
+    }
+
+    if (!/^\d{10,}$/.test(phone)) {
+      toast.error('Invalid phone number. Please enter at least 10 digits.', {
+        icon: '⚠️',
+      });
       return;
     }
 
@@ -44,7 +55,8 @@ const BookingButton = () => {
       hospital: selectedHospital,
       service: selectedService,
       price: price,
-      pickupLocation: pickupLocation
+      pickupLocation: pickupLocation,
+      phone: phone,
     };
 
     const message = `
@@ -52,9 +64,29 @@ const BookingButton = () => {
       Service: ${bookingData.service}
       Price: ${bookingData.price}
       Pickup Location: ${bookingData.pickupLocation}
+      Phone: ${bookingData.phone}
     `;
 
-    alert("Your request has been accepted! Thank you for using the service.\n" + message);
+    toast.success(
+      (t) => (
+        <div>
+          <strong>🎉 Booking Confirmed!</strong>
+          <div style={{ marginTop: '8px', fontSize: '14px' }}>
+            <div>🏥 {bookingData.hospital}</div>
+            <div>🚑 {bookingData.service}</div>
+            <div>💰 {bookingData.price}</div>
+            <div>📍 {bookingData.pickupLocation}</div>
+            <div>📞 {bookingData.phone}</div>
+          </div>
+        </div>
+      ),
+      {
+        duration: 6000,
+        style: {
+          maxWidth: '500px',
+        },
+      }
+    );
     handleClose();
   };
 
@@ -130,6 +162,25 @@ const BookingButton = () => {
                 onChange={(e) => setPickupLocation(e.target.value)}
                 required
               />
+            </Form.Group>
+
+            <Form.Group controlId="formPhone" className="mt-3">
+              <Form.Label>Phone Number</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter your phone number"
+                value={phone}
+                onChange={(e) => {
+                  const input = e.target.value;
+                  if (/^\d*$/.test(input)) { // Chỉ chấp nhận chữ số
+                    setPhone(input);
+                  }
+                }}
+                required
+              />
+              <Form.Text className="text-muted">
+                Phone number must contain at least 10 digits.
+              </Form.Text>
             </Form.Group>
 
             <Button variant="warning" type="submit" className="mt-3">

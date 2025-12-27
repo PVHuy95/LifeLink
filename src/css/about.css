@@ -1,21 +1,21 @@
 .bgAbout {
     min-height: 100vh;
     flex: 1;
-    background-color: rgb(185, 255, 254);
+    /* background-color: rgb(185, 255, 254); */
     width: 100%;
 }
 
 .blockabout {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
+    flex-wrap: wrap; /* Để các khối div tự động xuống hàng nếu màn hình nhỏ */
+    justify-content: space-between; /* Giãn đều các khối div */
+    align-items: flex-start; /* Canh chỉnh các khối div từ phía trên */
+    gap: 20px; /* Khoảng cách giữa các khối div */
 }
 .blockabout div {
-    flex: 1;
+    flex: 1; /* Cho các khối div chiếm khoảng không gian bằng nhau */
     margin: 10px;
-    min-width: 250px;
+    min-width: 250px; /* Đặt kích thước tối thiểu để không bị quá nhỏ */
 }
 
 .aboutus {
@@ -51,6 +51,7 @@ iframe,
 }
 
 
+/* Medium screens (tablets, small desktops) */
 @media (max-width: 992px) {
     h1 {
         font-size: 70px;
@@ -74,7 +75,7 @@ iframe,
     }
 }
 
-
+/* Small screens (mobile phones) */
 @media (max-width: 768px) {
     h1 {
         font-size: 50px;
@@ -97,7 +98,7 @@ iframe,
     }
 }
 
-
+/* Extra small screens (small mobile devices) */
 @media (max-width: 576px) {
     h1 {
         font-size: 40px;
