@@ -1,6 +1,6 @@
 # 🚑 LifeLink - Emergency Ambulance Service
 
-[![Techwiz 5](https://img.shields.io/badge/Competition-Techwiz%205-blue?style=for-the-badge&logo=trophy)](https://techwiz.aptech-education.com/)
+![Techwiz 5](https://img.shields.io/badge/Competition-Techwiz%205-blue?style=for-the-badge&logo=trophy)
 
 **LifeLink** is a web platform designed to provide emergency ambulance booking services, connecting users with the nearest medical units quickly and efficiently.
 
@@ -11,6 +11,10 @@
 
 ![LifeLink Banner](/public/background.png)
 
+## 🌐 Live Demo
+
+🔗 **[View Live Demo on Render](https://lifelink-k693.onrender.com)**
+
 ## 🌟 Key Features
 
 *   **🚑 Emergency Booking:** Quickly book an ambulance with a single button or via the 115 hotline.
@@ -20,7 +24,7 @@
 *   **💬 Feedback:** Users can submit reviews and suggestions about service quality.
 *   **📱 Responsive Design:** Fully compatible with both desktop and mobile devices.
 
-## � Team Sigma
+## 👥 Team Sigma
 
 We are a group of passionate developers dedicated to creating impactful solutions.
 
@@ -33,7 +37,7 @@ We are a group of passionate developers dedicated to creating impactful solution
 
 ![Team Sigma](/src/img/teamSigma.png)
 
-## �🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 This project is built using modern web technologies:
 
@@ -71,7 +75,7 @@ Start the development server:
 npm run dev
 ```
 
-Open your browser and navigate to: `http://localhost:5173/LifeLink/`
+Open your browser and navigate to: `http://localhost:5173/`
 
 ## 📂 Project Structure
 
@@ -84,7 +88,7 @@ LifeLink/
 │   ├── data/           # Mock data (JSON)
 │   ├── img/            # Project images
 │   ├── App.jsx         # Main component
-│   └── main.jsx        # Entry point
+│   └── index.jsx      # Entry point
 ├── index.html          # Main HTML file
 ├── package.json        # Dependencies and scripts
 └── vite.config.js      # Vite configuration
